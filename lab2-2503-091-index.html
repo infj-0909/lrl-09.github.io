@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>图书商城</title>
+    <link rel="stylesheet" href="CSS/lab2-2503-091-index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./镜心湖.png" alt="图书商城Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">图书分类</a></li>
+                <li><a href="#">热门推荐</a></li>
+                <li><a href="#">新书上市</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--  主体  -->
+    <main class="main">
+        <!-- 左侧 -->
+        <aside class="left-sidebar">
+            <h3>图书分类</h3>
+            <ul>
+                <li><a href="#">文学小说</a></li>
+                <li><a href="#">计算机技术</a></li>
+                <li><a href="#">经管励志</a></li>
+                <li><a href="#">少儿读物</a></li>
+                <li><a href="#">生活艺术</a></li>
+            </ul>
+        </aside>
+
+        <!-- 中间 -->
+        <section class="content">
+            <div class="book-show">
+                <h3>图书展示</h3>
+                <div class="book-item">
+                    <img src="./HTML+CSS网页设计.png" alt="图书封面">
+                    <div class="book-info">
+                        <h4>HTML+CSS网页设计</h4>
+                        <p>前端入门经典教材</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./JavaScript高级程序设计.png" alt="图书封面">
+                    <div class="book-info">
+                        <h4>JavaScript高级程序设计</h4>
+                        <p>入门必备</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="./Python编程从入门到实践.png" alt="图书封面">
+                    <div class="book-info">
+                        <h4>Python编程从入门到实践</h4>
+                        <p>Python入门必备</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hot-recommend">
+                <h3>热门推荐</h3>
+                <div class="recommend-list">
+                    <div class="recommend-item">
+                        <img src="./活着.png" alt="热门图书">
+                        <p>活着</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="./平凡的世界.png" alt="热门图书">
+                        <p>平凡的世界</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="./三体.png" alt="热门图书">
+                        <p>三体</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="./明朝那些事儿.png" alt="热门图书">
+                        <p>明朝那些事儿</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-book">
+                <h3>新书上市</h3>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>图书名称</th>
+                            <th>作者</th>
+                            <th>定价</th>
+                            <th>出版日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AI时代的编程思维</td>
+                            <td>李华</td>
+                            <td>¥9999.00</td>
+                            <td>2025-02-20</td>
+                        </tr>
+                        <tr>
+                            <td>前端框架实战</td>
+                            <td>李华</td>
+                            <td>¥9999.00</td>
+                            <td>2025-02-20</td>
+                        </tr>
+                        <tr>
+                            <td>数据结构与算法</td>
+                            <td>李华</td>
+                            <td>¥9999.00</td>
+                            <td>2025-02-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 右侧 -->
+        <aside class="right-sidebar">
+            <h3>限时促销</h3>
+            <div class="promo-item">
+                <img src="./镜心湖.png" alt="促销活动">
+                <p>满100减50</p>
+            </div>
+            <div class="promo-item">
+                <img src="./镜心湖.png" alt="促销活动">
+                <p>新书8折</p>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
