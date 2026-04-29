@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #466da7; 
+    color: #333;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+
+.header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #7fbc7f; 
+    border-bottom: 2px solid #0026ff; 
+    padding: 0 30px;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+}
+
+.logo {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo img {
+    width: 120px;
+    height: 80px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.nav {
+    float: right;
+    height: 80px; 
+    line-height: 80px;
+}
+
+.nav ul li {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    color: #555555;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s ease; 
+}
+
+.nav ul li a:hover {
+    color: #0015ff;
+}
+
+
+.main {
+    width: 1200px;
+    margin: 100px auto 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-sidebar {
+    width: 220px;
+    float: left;
+    padding: 20px;
+    background-color: #f7f9f596; 
+    border: 1px solid #2232aa;
+    border-radius: 6px; 
+    min-height: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.left-sidebar h3 {
+    margin-bottom: 15px;
+    color: #086dac; 
+    border-left: 4px solid #1986f3;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.left-sidebar ul li {
+    margin: 12px 0;
+}
+
+.left-sidebar ul li a {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 5px 0;
+    transition: all 0.2s ease;
+}
+
+.left-sidebar ul li a:hover {
+    color: #00e1ff;
+    background-color: #fdfdfc; 
+    padding-left: 5px;
+    border-radius: 8px;
+}
+
+
+.content {
+    width: 700px; 
+    float: left;
+    margin: 0 30px;
+}
+
+.content h3 {
+    margin: 20px 0 15px;
+    color: #0099ff; 
+    border-left: 4px solid #00fff2;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.book-show {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.book-item {
+    width: 200px;
+    height: 280px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.book-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.book-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.book-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(110, 216, 243, 0.85);
+    color: #fff;
+    padding: 20px;
+    display: none;
+    border-radius: 6px;
+}
+
+.book-item:hover .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.book-info h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.book-info p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.hot-recommend {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.recommend-list {
+    overflow: hidden;
+}
+
+.recommend-item {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+}
+
+.recommend-item img {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.recommend-item p {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.recommend-item:hover {
+    border-color: #1900ff;
+}
+
+.new-book {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden; 
+}
+
+th {
+    background-color: #fff8f0; 
+    color: #28d5e1;
+    padding: 12px;
+}
+
+td, th {
+    border: 1px solid #e9ecef;
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: #fff8f0;
+}
+
+/* 右侧边栏 */
+.right-sidebar {
+    width: 220px;
+    float: right;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.right-sidebar h3 {
+    margin-bottom: 15px;
+    color: #0015ff;
+    border-left: 4px solid #0048ffd8;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.promo-item {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.promo-item:hover {
+    background-color: #f0f7ffbe;
+}
+
+.promo-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.promo-item p {
+    font-weight: bold;
+    color: #00c8ff;
+    font-size: 14px;
+}
+
+.login-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 9999;
+}
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 10000;
+    padding: 30px;
+}
+.login-form, .register-form {
+    width: 100%;
+}
+.register-form {
+    display: none;
+}
+.login-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0048ff;
+    font-size: 18px;
+}
+.form-item {
+    margin: 15px 0;
+}
+.form-item input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0048ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.switch-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    cursor: pointer;
+}
+.switch-link:hover {
+    color: #0048ff;
+}
